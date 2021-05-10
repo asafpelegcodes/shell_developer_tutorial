@@ -9,7 +9,7 @@ Instructions are streamlined with the assumption of macOS.
 1. Open iTerm and install zsh using [ohmyzsh](https://ohmyz.sh/#install)
 1. Clone this repo and navigate to it in your terminal
 
-## Lesson 1: [Shell 101](./lessson1/README.md)
+## Lesson 1: [Shell 101](./lesson1/README.md)
 
 ## Lesson 2:
 
