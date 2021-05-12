@@ -45,29 +45,52 @@ Fun fact, the proper name for _sh_ is the Bourne Shell and _bash_ is short for B
     * `cd ~`
     * `mkdir mystuff`
     * `cd mystuff`
-1. Delete that directory: `rmdir`
+1. Delete directory: `rmdir`
     * `cd ..`
     * `rmdir mystuff`
 1. Your first file manipulation: `touch`
     * `mkdir mystuff`
-    * `cd mystuff`
-    * `touch myfile`
+    * `touch firstfile`  
+    * `touch mystuff/myfile`
 1. List Directory: `ls`
+    * `ls`
     * list form: `ls -l`
     * `touch myfile2`
     * list in create order: `ls -lt`
     * list in reversed create order: `ls -ltr`
-1. Copy & Paste: `cp`
-    * `cp myfile myfilecopy`
+1. Move: `mv`
+   * `mv myfile2 mystuff/myfile2`
+   * `touch myfile3`
+   * `mv myfile3 mystuff/`
+   * `touch movefile`  
+   * `mv movefile anotherfilename`
+   * Note: will overwrite files
+1. Copy: `cp`
+    * `cp firstfile myfilecopy`
     * `mkdir newfolder`
-    * `cp myfile2 newfolder/newfile`
-    * Lets try with absolute paths, what is your `pwd`
-    * `cp ~/mystuff/myfile ~/mystuff/newfolder/newfile2`
-1. Move (aka cut): `mv`
-    * `mv newfolder/newfile newfile`
-    * `mv myfilecopy anotherfilename`
-1. Delete: `rm`
+    * `cp myfilecopy newfolder/newfile`
+    * Lets try with a mix of relative & absolute paths
+    * `cp firstfile ~/firstfilecopy`
+    * Note: will overwrite files
+1. Remove: `rm`
     * `rm anotherfilename`
     * `touch filetodelete1`
     * `touch newfolder/filetodelete2`
-    * `rm filetodelet1 newfolder/filetodelete2`
+    * `rm filetodelete1 newfolder/filetodelete2`
+1. Using Copy & Remove with the recursive (`-r`) option:
+    * Normally copy & remove only respect files
+    * Using the `-r` option will allow you to manipulate directories as well
+    * `cp -r newfolder mystuff`
+    * `ls mystuff/`
+    * Note: `rm` asks for confirmation and to skip it use `-f`  
+    * `rm -rf mystuff/newfolder`
+1. Using `mv` on entire directories
+    * Unlike `cp` & `rm` it doesn't need any special options to move folders
+    * `mv newfolder mystuff/`
+    * `ls` 
+    * `ls mystuff`
+1. The wildcard character `*`
+    * The wildcard character is a simple regular expression that matches any character
+    * It can be used to manipulate parts of or entire contents of a directory
+    * `cp mystuff/my* .`
+    * `rm myf*`
