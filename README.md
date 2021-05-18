@@ -10,8 +10,16 @@ Instructions are streamlined with the assumption of macOS.
 1. Clone this repo and navigate to it in your terminal
 
 ## Lesson 1: [Shell 101](./lesson1/README.md)
+* Unix File System
+* Basic file manipulation
 
-## Lesson 2:
+## Lesson 2: [Scripts, Sesssions & vim](./lesson2/README.md)
+* Writing to files & vim basics
+* intro to bash scripts  
+* permissions and ownership
+* Shell sessions, environment variables, & aliases
+* session profiles
+
 
 ## Lesson 3:
 
