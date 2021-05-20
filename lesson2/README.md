@@ -1,6 +1,6 @@
 # Lesson 2
 
-## Excercises
+## Exercises
 1. Output text: `echo`
     * `echo hello world!`
 1. Output file: `cat`

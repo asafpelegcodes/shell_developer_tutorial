@@ -18,7 +18,7 @@ Fun fact, the proper name for _sh_ is the Bourne Shell and _bash_ is short for B
 * https://en.wikipedia.org/wiki/Shell_(computing)
 * https://en.wikipedia.org/wiki/Unix_shell
 
-## Excercises
+## Exercises
 1. Getting familiar with Unix directory structure and the difference between absolute and relative paths.
     * Directory structure is at the heart of all shell programming and is relevant for almost every command
     * Directories (ie folders) is how all your files are organized on your computer and can be thought of as a [tree structure](http://labor-liber.org/images/linux/arbo-unix.gif)
