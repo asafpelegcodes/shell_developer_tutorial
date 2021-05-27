@@ -21,6 +21,11 @@ Instructions are streamlined with the assumption of macOS.
 * session profiles
 
 
-## Lesson 3:
+## Lesson 3: [Pipes, Gregm, Shortcuts & Leftovers](./lesson3/README.md)
+* Additional file readers
+* Searching files with grep
+* Learning about pipes
+* history & additional shortcuts
+* Leftovers
 
 

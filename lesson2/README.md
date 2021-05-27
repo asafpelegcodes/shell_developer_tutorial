@@ -1,4 +1,9 @@
 # Lesson 2
+Expanding on the basics with manipulation of files including an understanding of their permissions and ownership. 
+
+For more file versatility an intro to `vim` will be followed by creating our first bash script. 
+
+Finally, managing shell sessions will be discussed. 
 
 ## Exercises
 1. Output text: `echo`
@@ -46,8 +51,8 @@
       * Take away owner read permissions: `chmod u-r myscript.sh`
       * `ls -ltr`
       * `cat myscript.sh`
-      * Add read & write permission to owner & group: `chmod ug+rw`
-      * Remove read permission to group & others: `chmod go-r`
+      * Add read & write permission to owner & group: `chmod ug+rw myscript.sh`
+      * Remove read permission to group & others: `chmod go-r myscript.sh`
    * Test running your script `./myscript.sh`
    * Ownership is modified with `chown` and only the owner can change it
       * `sudo chown root:wheel myscript.sh` & enter your computer password
@@ -64,9 +69,9 @@
          touch script_file
          echo bash is fun > script_file
          cp script_file script_backup
-         ls -lt
+         ls -ltr
          ```
-      * For a fun ending insert `wget -qO- git.io/unix` as your final command which will download & display a surprise
+      * For a fun ending insert `curl -L git.io/unix` as your final command which will download & display a surprise
    * Once you are done inserting, press escape `Esc` to return to command mode
    * In order to save & quit enter colon `:` followed by `w` (write/save) `q` (quit)
    * Note: `w` & `q` can be entered separately but if used together must be in that order
@@ -94,8 +99,8 @@
     * Variables available in the current session
     * List current environment variables: `printenv`
     * Add new variable: `export MYVAR=hello`
-    * Remove variable: `unset MYVAR`
     * Print variable: `echo $MYVAR`
+    * Remove variable: `unset MYVAR`
 1. Aliases
     * aliases are shortcuts to commands
     * `alias lr="ls -ltra"`
@@ -111,6 +116,6 @@
     * Shell's provide a _profile_ to prime new sessions with all your favorite environment variables and aliases
     * ZSH profile is located in `~/.zshrc`
     * `vim ~/.zshrc`
-    * Navigate to the end of the file and enter insert mode
+    * Navigate to the end of the file by typing `SHIFT+g` and enter insert mode with `i`
     * Add `alias lr="ls -ltra"` then save & quit
     * Open a new tab in iTerm & type `lr`
