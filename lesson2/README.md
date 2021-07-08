@@ -57,7 +57,7 @@ Finally, managing shell sessions will be discussed.
    * Ownership is modified with `chown` and only the owner can change it
       * `sudo chown root:wheel myscript.sh` & enter your computer password
       * `cat myscript.sh`
-      * `sudo chown apeleg:staff` (replace apeleg:staff with your local username & group)
+      * `sudo chown apeleg:staff myscript.sh` (replace apeleg:staff with your local username & group)
       * Note: `sudo` is a command that tells the shell to run the command as root
 1. Writing a bigger script using `vim`:
    * `vim` is a popular and versatile text editor available on most modern Unix & Unix like operating systems
