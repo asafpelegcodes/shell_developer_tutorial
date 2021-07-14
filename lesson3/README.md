@@ -39,8 +39,9 @@ Before concluding we'll demystify command history and get a taste of some advanc
     * `grep hello hello_grep.txt | grep twist`  
     * Execute the given script to create a simulated log file: `./log_generator.sh &` (note: the `&` sends the script execution to the background)
     * `tail -f grep.log`
-    * press ctrl+c to stop following the file
+    * press `ctrl+c` to stop following the file
     * `tail -f grep.log | grep hello`
+    * press `ctrl+c` to stop following the file
     * Check the content type of a HTTP response  `curl -s -I ifconfig.me | grep content-type`
 1. Command `history`
    * `history` will display a list of your previous commands in descending order
@@ -51,8 +52,7 @@ Before concluding we'll demystify command history and get a taste of some advanc
    * The best shortcut has already been covered `tab` for completion.
    * shortcut `ctrl + r` is used to recursively look up your previous history. Once prompted type characters and simple regex will be used to locate the previous command that matches it. Type `ctrl + r` again to locate the next oldest match
    * `ctrl + c` will kill whatever program you are running and is also handy to delete your current prompt
-   * Start `./log_generator.sh` and then type `ctrl + c` to exit it prematurely
-   * `ctrl + k` will clear your shell
+   * `ctrl + l` will clear your shell (mac also supports `cmd + k`)
    * `ctrl + d` is a shortcut to exit the current session (note: this will close your current tab)
 1. If you forget use the manual: `man`
    * Anytime you forget how to use a command know that there are manuals for them all
