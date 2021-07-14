@@ -39,6 +39,7 @@ Before concluding we'll demystify command history and get a taste of some advanc
     * `grep hello hello_grep.txt | grep twist`  
     * Execute the given script to create a simulated log file: `./log_generator.sh &` (note: the `&` sends the script execution to the background)
     * `tail -f grep.log`
+    * press ctrl+c to stop following the file
     * `tail -f grep.log | grep hello`
     * Check the content type of a HTTP response  `curl -s -I ifconfig.me | grep content-type`
 1. Command `history`
