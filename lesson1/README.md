@@ -24,7 +24,7 @@ Fun fact, the proper name for _sh_ is the Bourne Shell and _bash_ is short for B
     * Directories (ie folders) is how all your files are organized on your computer and can be thought of as a [tree structure](../static/UnixDirectoryStructure.png)
     * Examples of a valid directory are `/`, `/tmp`, `/Users/Shared`, and `/Library/Apple/usr/share/`
     * The root directory `/` is the "trunk" of the directories and all other directories are children or its descendants
-    * There is also a special directory denoted by the tilda `~` character, which is the users respective home directory (more on this later)
+    * There is also a special directory denoted by the tilde `~` character, which is the users respective home directory (more on this later)
     * When using a command either absolute or relative paths may be used.
     * An absolute path is a path that contains the root directory `/`
     * A relative path is one that is respective of your current location in the file system.
