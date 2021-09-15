@@ -24,6 +24,8 @@ Fun fact, the proper name for _sh_ is the Bourne Shell and _bash_ is short for B
     * Directories (ie folders) is how all your files are organized on your computer and can be thought of as a [tree structure](../static/UnixDirectoryStructure.png)
     * Examples of a valid directory are `/`, `/tmp`, `/Users/Shared`, and `/Library/Apple/usr/share/`
     * The root directory `/` is the "trunk" of the directories and all other directories are children or its descendants
+    * Each occurrence of `/` in a path means the item on the right of the `/` is inside the directory to the left of `/`. 
+      * In the example `/Users/Shared` can be read **Shared** is inside the directory **Users**
     * There is also a special directory denoted by the tilda `~` character, which is the users respective home directory (more on this later)
     * When using a command either absolute or relative paths may be used.
     * An absolute path is a path that contains the root directory `/`
@@ -39,8 +41,10 @@ Fun fact, the proper name for _sh_ is the Bourne Shell and _bash_ is short for B
     * `cd /Users/[your username]`
     * `cd ~` and try `pwd` to confirm
     * `cd ..`
+    * ![DirectoryStructure](../static/DirectoryStructure.gif)
 1. Use tab completion
     * `cd ` and press tab twice then make a choice followed by tab twice again
+    * ![TabCompletion](../static/TabCompletion.gif)
 1. Make directory: `mkdir`
     * `cd ~`
     * `mkdir mystuff`
@@ -48,6 +52,7 @@ Fun fact, the proper name for _sh_ is the Bourne Shell and _bash_ is short for B
 1. Delete directory: `rmdir`
     * `cd ..`
     * `rmdir mystuff`
+    * ![MakeRemoveDirectory](../static/MakeRemoveDirectory.gif)
 1. Your first file manipulation: `touch`
     * `mkdir mystuff`
     * `touch firstfile`  
@@ -55,9 +60,9 @@ Fun fact, the proper name for _sh_ is the Bourne Shell and _bash_ is short for B
 1. List Directory: `ls`
     * `ls`
     * list form: `ls -l`
-    * `touch myfile2`
-    * list in create order: `ls -lt`
-    * list in reversed create order: `ls -ltr`
+    * `touch ./myfile2`
+    * list in modified order: `ls -lt`
+    * list in reversed modified order: `ls -ltr`
 1. Move: `mv`
    * `mv myfile2 mystuff/myfile2`
    * `touch myfile3`
@@ -65,32 +70,39 @@ Fun fact, the proper name for _sh_ is the Bourne Shell and _bash_ is short for B
    * `touch movefile`  
    * `mv movefile anotherfilename`
    * Note: will overwrite files
+   * ![MakeAndMove](../static/MakeAndMove.gif)
 1. Copy: `cp`
     * `cp firstfile myfilecopy`
     * `mkdir newfolder`
-    * `cp myfilecopy newfolder/newfile`
+    * `cp myfilecopy newfolder/`
     * Lets try with a mix of relative & absolute paths
     * `cp firstfile ~/firstfilecopy`
+      * Note: **~/** is an absolute path and is a special short-hand way of typing your home directory
     * Note: will overwrite files
 1. Remove: `rm`
     * `rm anotherfilename`
     * `touch filetodelete1`
     * `touch newfolder/filetodelete2`
     * `rm filetodelete1 newfolder/filetodelete2`
+      * Note: you can remove any number of files in a single command as you like
+    * ![CopyAndRemove](../static/CopyAndRemove.gif)
 1. Using Copy & Remove with the recursive (`-r`) option:
     * Normally copy & remove only respect files
     * Using the `-r` option will allow you to manipulate directories as well
     * `cp -r newfolder mystuff`
-    * `ls mystuff/`
-    * Note: `rm` asks for confirmation and to skip it use `-f`  
+    * `ls -ltr mystuff/`    
+    * Recursive option is also available for `rm`
     * `rm -rf mystuff/newfolder`
+    * Note: The `-f` in `rm` skips the confirmation prompt
 1. Using `mv` on entire directories
     * Unlike `cp` & `rm` it doesn't need any special options to move folders
     * `mv newfolder mystuff/`
-    * `ls` 
-    * `ls mystuff`
+    * `ls -ltr` 
+    * `ls -ltr mystuff`
 1. The wildcard character `*`
     * The wildcard character is a simple regular expression that matches any character
     * It can be used to manipulate parts of or entire contents of a directory
     * `cp mystuff/my* .`
     * `rm myf*`
+    * ![RecursiveAndWildcard](../static/RecursiveAndWildcard.gif)
+    
