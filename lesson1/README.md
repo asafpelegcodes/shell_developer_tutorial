@@ -41,10 +41,18 @@ Fun fact, the proper name for _sh_ is the Bourne Shell and _bash_ is short for B
     * `cd /Users/[your username]`
     * `cd ~` and try `pwd` to confirm
     * `cd ..`
-    * ![DirectoryStructure](../static/DirectoryStructure.gif)
+    * <details>
+         <summary>Example GIF</summary>
+    
+         ![DirectoryStructure](../static/DirectoryStructure.gif)
+      </details>
 1. Use tab completion
     * `cd ` and press tab twice then make a choice followed by tab twice again
-    * ![TabCompletion](../static/TabCompletion.gif)
+    * <details>
+         <summary>Example GIF</summary>
+      
+         ![TabCompletion](../static/TabCompletion.gif)
+      </details>
 1. Make directory: `mkdir`
     * `cd ~`
     * `mkdir mystuff`
@@ -52,7 +60,11 @@ Fun fact, the proper name for _sh_ is the Bourne Shell and _bash_ is short for B
 1. Delete directory: `rmdir`
     * `cd ..`
     * `rmdir mystuff`
-    * ![MakeRemoveDirectory](../static/MakeRemoveDirectory.gif)
+    * <details>
+         <summary>Example GIF</summary>
+      
+         ![MakeRemoveDirectory](../static/MakeRemoveDirectory.gif)
+      </details>
 1. Your first file manipulation: `touch`
     * `mkdir mystuff`
     * `touch firstfile`  
@@ -70,7 +82,11 @@ Fun fact, the proper name for _sh_ is the Bourne Shell and _bash_ is short for B
    * `touch movefile`  
    * `mv movefile anotherfilename`
    * Note: will overwrite files
-   * ![MakeAndMove](../static/MakeAndMove.gif)
+   * <details>
+         <summary>Example GIF</summary>
+     
+         ![MakeAndMove](../static/MakeAndMove.gif)
+     </details>
 1. Copy: `cp`
     * `cp firstfile myfilecopy`
     * `mkdir newfolder`
@@ -85,7 +101,11 @@ Fun fact, the proper name for _sh_ is the Bourne Shell and _bash_ is short for B
     * `touch newfolder/filetodelete2`
     * `rm filetodelete1 newfolder/filetodelete2`
       * Note: you can remove any number of files in a single command as you like
-    * ![CopyAndRemove](../static/CopyAndRemove.gif)
+    * <details>
+         <summary>Example GIF</summary>
+   
+         ![CopyAndRemove](../static/CopyAndRemove.gif)
+      </details>
 1. Using Copy & Remove with the recursive (`-r`) option:
     * Normally copy & remove only respect files
     * Using the `-r` option will allow you to manipulate directories as well
@@ -104,5 +124,13 @@ Fun fact, the proper name for _sh_ is the Bourne Shell and _bash_ is short for B
     * It can be used to manipulate parts of or entire contents of a directory
     * `cp mystuff/my* .`
     * `rm myf*`
-    * ![RecursiveAndWildcard](../static/RecursiveAndWildcard.gif)
-    
+    * <details>
+         <summary>Example GIF</summary>
+
+         ![RecursiveAndWildcard](../static/RecursiveAndWildcard.gif)
+      </details>
+
+
+
+
+
