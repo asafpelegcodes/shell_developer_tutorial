@@ -23,6 +23,11 @@ Before concluding we'll demystify command history and get a taste of some advanc
    * grep can also be used to ignore certain text `grep -v hello hello_grep.txt`
    * By default, grep is case-sensitive but ignoring case is also common `grep -i hello hello_grep.txt`
    * fun fact, grep stands for "**G**lobally search for a **R**egular **E**xpression and **P**rint matching lines"   
+   * <details>
+        <summary>Example GIF</summary>
+
+     ![CopyAndRemove](../static/TailAndGrep.gif)
+     </details>    
 1. Simple web request tool: `curl`
    * `curl` comes in handy when testing out APIs or doing an investigation for front end work
    * It's light weight but also capable enough all varieties of HTTP requests
@@ -43,6 +48,11 @@ Before concluding we'll demystify command history and get a taste of some advanc
     * `tail -f grep.log | grep hello`
     * press `ctrl+c` to stop following the file
     * Check the content type of a HTTP response  `curl -s -I ifconfig.me | grep content-type`
+   * <details>
+        <summary>Example GIF</summary>
+
+     ![CopyAndRemove](../static/Pipes.gif)
+     </details>     
 1. Command `history`
    * `history` will display a list of your previous commands in descending order
    * Using the up/down arrow keys at shell prompt traverses this history
