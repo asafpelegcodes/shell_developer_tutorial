@@ -23,6 +23,11 @@ Finally, managing shell sessions will be discussed.
    * `echo hola world! >> new_hello_file`
    * `cat new_hello_file`
    * Note: both redirections create a new file if it does not exist
+   * <details>
+      <summary>Example GIF</summary>
+
+      ![FileManipulation](../static/FileManipulation.gif)
+     </details>
 1. Your first script:
    * `echo ls -ltr > myscript.sh`
    * `bash myscript.sh`
@@ -105,6 +110,11 @@ Finally, managing shell sessions will be discussed.
     * aliases are shortcuts to commands
     * `alias lr="ls -ltra"`
     * `lr`
+   * <details>
+      <summary>Example GIF</summary>
+
+     ![VariablesAliases](../static/VariablesAndAliases.gif)
+     </details>
 1. Dot Files
     * Filenames that begin with a dot/period are hidden by default
     * The `-a` option of `ls` reveals them
